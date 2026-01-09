@@ -10,35 +10,39 @@
 <body>
 
     <header>
-        <div class="navbar-top">
-            <div class="logo">CampusConnect</div>
-            <nav class="main-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="auth-buttons">
-                <a href="login.html" class="btn btn-login">Log In</a>
-                <a href="login.html" class="btn btn-signup">Sign Up</a>
-            </div>
+    <div class="navbar-top">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
         </div>
 
-        <div class="navbar-bottom">
-            <div class="utility-links">
-                <ul>
-                    <li><a href="buy.html"><i class="fas fa-shopping-bag"></i> Buy</a></li>
-                    <li><a href="sell.html"><i class="fas fa-camera"></i> Sell</a></li>
-                    <li><a href="wishlist.html"><i class="fas fa-heart"></i> Wishlist</a></li>
-                    <li><a href="help.html"><i class="fas fa-question-circle"></i> Help</a></li>
-                </ul>
-            </div>
-            <div class="language-opt">
-                <span>Language: EN ▼</span>
-            </div>
+        <div class="logo">CampusConnect</div>
+
+        <nav class="main-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="auth-buttons">
+            <a href="login.html" class="btn btn-login">Log In</a>
+            <a href="signup.html" class="btn btn-signup">Sign Up</a>
         </div>
-    </header>
+    </div>
+
+    <div id="sideMenu" class="side-nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+        <div class="side-nav-content">
+            <a href="buy.html"><i class="fas fa-shopping-bag"></i> Buy</a>
+            <a href="sell.html"><i class="fas fa-camera"></i> Sell</a>
+            <a href="wishlist.html"><i class="fas fa-heart"></i> Wishlist</a>
+            <a href="help.html"><i class="fas fa-question-circle"></i> Help</a>
+            <hr>
+            <a href="#"><i class="fas fa-globe"></i> Language: EN</a>
+        </div>
+    </div>
+</header>
 
     <section class="hero-search">
         <h2>Find what you need on Campus</h2>

@@ -41,14 +41,72 @@ header {
 }
 
 /* Top Bar: Logo & Main Nav */
+/* --- New Header Styles --- */
 .navbar-top {
+    background-color: var(--white);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 5%;
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 1px solid #eee;
 }
 
+/* Three-line Menu Button */
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--primary-color);
+    padding: 5px;
+}
+
+/* --- The Side Navigation Menu --- */
+.side-nav {
+    height: 100%;
+    width: 0; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: var(--white);
+    overflow-x: hidden;
+    transition: 0.4s; /* Smooth slide effect */
+    padding-top: 60px;
+    box-shadow: 2px 0 15px rgba(0,0,0,0.1);
+}
+
+.side-nav-content a {
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--text-color);
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav-content a i {
+    margin-right: 15px;
+    width: 25px;
+    color: var(--primary-color);
+}
+
+.side-nav-content a:hover {
+    background-color: #f0f7ff;
+    color: var(--primary-color);
+}
+
+.side-nav .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    color: #888;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 32px;
+}
 .logo {
     font-size: 24px;
     font-weight: bold;

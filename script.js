@@ -159,3 +159,20 @@ function loadCategoryItems() {
         }
     }
 }
+/* --- Toggle Side Menu --- */
+function toggleMenu() {
+    const menu = document.getElementById("sideMenu");
+    if (menu.style.width === "300px") {
+        menu.style.width = "0";
+    } else {
+        menu.style.width = "300px";
+    }
+}
+
+// Close menu if user clicks outside of it
+window.onclick = function(event) {
+    const menu = document.getElementById("sideMenu");
+    if (event.target == menu) {
+        menu.style.width = "0";
+    }
+}
