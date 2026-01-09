@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect - Buy & Sell</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar-top">
+            <div class="logo">CampusConnect</div>
+            <nav class="main-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-login">Log In</a>
+                <a href="login.html" class="btn btn-signup">Sign Up</a>
+            </div>
+        </div>
+
+        <div class="navbar-bottom">
+            <div class="utility-links">
+                <ul>
+                    <li><a href="buy.html"><i class="fas fa-shopping-bag"></i> Buy</a></li>
+                    <li><a href="sell.html"><i class="fas fa-camera"></i> Sell</a></li>
+                    <li><a href="wishlist.html"><i class="fas fa-heart"></i> Wishlist</a></li>
+                    <li><a href="help.html"><i class="fas fa-question-circle"></i> Help</a></li>
+                </ul>
+            </div>
+            <div class="language-opt">
+                <span>Language: EN ▼</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-search">
+        <h2>Find what you need on Campus</h2>
+        <div class="search-container">
+            <input type="text" placeholder="Search for books, calculators, lab coats...">
+            <button onclick="searchFunction()">Search</button>
+        </div>
+    </section>
+
+    <section class="section-container">
+        <h3 class="section-title">Browse Categories</h3>
+        <div class="category-grid">
+            <a href="category.html?type=books"
+             class="category-card">
+                <span class="cat-icon">📚</span>
+                <p>Books & Notes</p>
+            </a>
+
+            <a href="category.html?type=eletronics"
+            class="category-card">
+                <span class="cat-icon">🖩</span>
+                <p>Electronics</p>
+            </a>
+
+            <a href="category.html?type=vehicles"
+            class="category-card">
+                <span class="cat-icon">🚲</span>
+                <p>Vehicles</p>
+            </a>
+
+            <a href="category.html?type=lab"
+             class="category-card">
+                <span class="cat-icon">🥼</span>
+                <p>Lab Essentials</p>
+            </a>
+
+            <a href="category.html?type=hostel items"
+             class="category-card">
+                <span class="cat-icon">🛋️</span>
+                <p>Hostel Items</p>
+            </a>
+        </div>
+    </section>
+
+    <section class="section-container">
+        <h3 class="section-title">Fresh Recommendations</h3>
+        <div class="product-grid" id="product-container">
+            <div class="product-card">
+                <div class="product-img">Image of Book</div>
+                <div class="product-info">
+                    <h4>Engineering Physics - Sem 1</h4>
+                    <p class="price">$15.00</p>
+                    <p>Condition: Good</p>
+                    <a href="#" class="btn-buy" onclick="alertUser()">Contact Seller</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">Image of Calculator</div>
+                <div class="product-info">
+                    <h4>Casio Scientific Calculator</h4>
+                    <p class="price">$25.00</p>
+                    <p>Condition: Like New</p>
+                    <a href="#" class="btn-buy" onclick="alertUser()">Contact Seller</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">Image of Drafter</div>
+                <div class="product-info">
+                    <h4>Mini Drafter (Engineering)</h4>
+                    <p class="price">$10.00</p>
+                    <p>Condition: Used</p>
+                    <a href="#" class="btn-buy" onclick="alertUser()">Contact Seller</a>
+                </div>
+            </div>
+             <div class="product-card">
+                <div class="product-img">Image of Cycle</div>
+                <div class="product-info">
+                    <h4>Hero Cycle (Black)</h4>
+                    <p class="price">$50.00</p>
+                    <p>Condition: Used</p>
+                    <a href="#" class="btn-buy" onclick="alertUser()">Contact Seller</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CampusConnect. A College Project.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

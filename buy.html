@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Items - CampusConnect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar-top">
+            <div class="logo"><a href="index.html">CampusConnect</a></div>
+            <a href="index.html" class="btn-login">Back to Home</a>
+        </div>
+    </header>
+
+    <div class="buy-container">
+        <aside class="sidebar">
+            <h3>Filters</h3>
+            <div class="filter-group">
+                <h4>Category</h4>
+                <label><input type="checkbox"> Books</label>
+                <label><input type="checkbox"> Electronics</label>
+                <label><input type="checkbox"> Lab Coats</label>
+            </div>
+            <div class="filter-group">
+                <h4>Price Range</h4>
+                <input type="range" min="0" max="5000">
+                <p>Max: ₹5000</p>
+            </div>
+            <button class="form-btn" style="padding: 5px; margin-top: 10px;">Apply</button>
+        </aside>
+
+        <main class="product-grid" style="margin-top: 0;">
+            <div class="product-card">
+                <div class="product-img"><i class="fas fa-book fa-3x"></i></div>
+                <div class="product-info">
+                    <h4>Maths Textbook</h4>
+                    <p class="price">₹300</p>
+                    <button class="btn-buy">Chat with Seller</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img"><i class="fas fa-calculator fa-3x"></i></div>
+                <div class="product-info">
+                    <h4>Scientific Calc</h4>
+                    <p class="price">₹800</p>
+                    <button class="btn-buy">Chat with Seller</button>
+                </div>
+            </div>
+            </main>
+    </div>
+</body>
+</html>

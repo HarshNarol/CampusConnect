@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Item - CampusConnect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar-top">
+            <div class="logo"><a href="index.html">CampusConnect</a></div>
+            <div class="main-links">
+                <ul><li><a href="index.html">Home</a></li></ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="form-wrapper" style="max-width: 600px;">
+        <h2 class="form-title">Sell an Item</h2>
+        <form id="sellForm">
+            <div class="form-group">
+                <label>Product Title</label>
+                <input type="text" placeholder="e.g. Engineering Physics Book" required>
+            </div>
+            
+            <div class="two-col-grid">
+                <div class="form-group">
+                    <label>Price (₹)</label>
+                    <input type="number" placeholder="500" required>
+                </div>
+                <div class="form-group">
+                    <label>Category</label>
+                    <select required>
+                        <option value="">Select...</option>
+                        <option>Books</option>
+                        <option>Electronics</option>
+                        <option>Stationery</option>
+                        <option>Cycles</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Description</label>
+                <textarea rows="4" placeholder="Describe condition, how old it is, etc."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Upload Photo</label>
+                <div class="upload-box" onclick="document.getElementById('fileInput').click()">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <p>Click to Upload Image</p>
+                    <input type="file" id="fileInput" style="display: none;" onchange="previewImage(event)">
+                </div>
+                <img id="imgPreview" class="image-preview" style="display: none;">
+            </div>
+
+            <button type="submit" class="form-btn">Post Ad</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

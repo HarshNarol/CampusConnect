@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Category - CampusConnect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="navbar-top">
+            <div class="logo"><a href="index.html">CampusConnect</a></div>
+            <a href="index.html">Back to Home</a>
+        </div>
+    </header>
+
+    <div class="section-container">
+        <h2 id="category-title" class="section-title" style="text-transform: capitalize;">Category</h2>
+        
+        <div class="product-grid" id="category-products">
+            <p id="no-products-msg" style="display:none; color: #666;">No products found in this category yet.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Run the function to load products when page opens
+        window.onload = loadCategoryItems; 
+    </script>
+</body>
+</html>
