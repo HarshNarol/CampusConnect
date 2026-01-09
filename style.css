@@ -42,13 +42,39 @@ header {
 
 /* Top Bar: Logo & Main Nav */
 /* --- New Header Styles --- */
+/* --- Responsive Navigation --- */
 .navbar-top {
-    background-color: var(--white);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 5%;
-    border-bottom: 1px solid #eee;
+    padding: 10px 5%;
+    flex-wrap: wrap; /* Allows items to move to next line if space is tight */
+    gap: 10px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Make buttons adjust on very small screens */
+@media (max-width: 480px) {
+    .auth-buttons {
+        width: 100%; /* Take full width */
+        justify-content: center; /* Center buttons */
+        order: 3; /* Move buttons below logo and menu icon */
+    }
+    
+    .btn {
+        flex: 1; /* Make both buttons equal width */
+        text-align: center;
+        font-size: 14px;
+        padding: 10px 5px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
 }
 
 /* Three-line Menu Button */
@@ -517,4 +543,41 @@ footer {
     border-bottom: 1px solid #eee;
     padding: 15px 0;
 }
-.faq-item h3 { color: var(--secondary-color); margin-bottom: 5px; }
+.faq-item h3 { color: var(--secondary-color); margin-bottom: 5px;
+ }
+[2:03 pm, 09/01/2026] Harsh Narol: /* --- Responsive Search Bar --- */
+@media (max-width: 768px) {
+    .hero-search h2 {
+        font-size: 1.5rem;
+    }
+
+    .search-container {
+        width: 90%;
+        flex-direction: column; /* Stack input and button vertically */
+        gap: 10px;
+    }
+
+    .search-container input {
+        border-radius: 5px;
+    }
+
+    .search-container button {
+        border-radius: 5px;
+        width: 100%;
+    }
+}
+[2:03 pm, 09/01/2026] Harsh Narol: /* --- Responsive Grids --- */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); /* 2 columns on mobile */
+        gap: 15px;
+    }
+
+    .category-grid {
+        gap: 10px;
+    }
+
+    .category-card {
+        width: 45%; /* Shows 2 categories per row */
+    }
+}
