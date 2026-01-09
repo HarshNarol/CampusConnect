@@ -545,7 +545,7 @@ footer {
 }
 .faq-item h3 { color: var(--secondary-color); margin-bottom: 5px;
  }
-[2:03 pm, 09/01/2026] Harsh Narol: /* --- Responsive Search Bar --- */
+ /* --- Responsive Search Bar --- */
 @media (max-width: 768px) {
     .hero-search h2 {
         font-size: 1.5rem;
@@ -566,7 +566,7 @@ footer {
         width: 100%;
     }
 }
-[2:03 pm, 09/01/2026] Harsh Narol: /* --- Responsive Grids --- */
+ /* --- Responsive Grids --- */
 @media (max-width: 768px) {
     .product-grid {
         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); /* 2 columns on mobile */
