@@ -80,42 +80,42 @@ const productsDB = [
         id: 1,
         title: "Engineering Physics",
         category: "books",
-        price: "₹300",
-        image: "fa-book" // Using font-awesome icon instead of real image for now
+        price: "Rs.300",
+        image: "fa-book-open"
     },
     {
         id: 2,
         title: "Casio Scientific Calc",
         category: "electronics",
-        price: "₹850",
+        price: "Rs.850",
         image: "fa-calculator"
     },
     {
         id: 3,
         title: "Hero Cycle (Black)",
         category: "vehicles",
-        price: "₹3000",
+        price: "Rs.3000",
         image: "fa-bicycle"
     },
     {
         id: 4,
         title: "White Lab Coat (M)",
         category: "lab",
-        price: "₹400",
+        price: "Rs.400",
         image: "fa-flask"
     },
     {
         id: 5,
         title: "Chemistry Notes (Sem 1)",
         category: "books",
-        price: "₹150",
+        price: "Rs.150",
         image: "fa-book-open"
     },
     {
         id: 6,
         title: "Laptop Stand",
         category: "electronics",
-        price: "₹500",
+        price: "Rs.500",
         image: "fa-laptop"
     }
 ];
@@ -176,3 +176,25 @@ window.onclick = function(event) {
         menu.style.width = "0";
     }
 }
+// 
+document.addEventListener('DOMContentLoaded',() => {
+    const conditions = document.querySelectorAll('.product-condition');
+
+    conditions.forEach(el => { 
+        const text = el.innerText.toLowerCase();
+        //Basic styling for the badge look
+        el.style.padding = "2px 8px";
+        el.style.borderRadius = "4px";
+        el.style.display = "inline-block";
+        el.style.fontSize = "12px";
+
+        if (text.includes('new')){
+            el.style.backgroundColor = '#e6ffed';
+            el.style.color = '#28a745';
+            el.style.fontWeight = 'bold';
+        } else if (text.includes('used')){
+            el.style.backgroundColor = '#fff4e6';
+            el.style.color = '#fd7e14';
+        }
+    });
+});
