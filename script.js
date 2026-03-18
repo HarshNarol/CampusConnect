@@ -80,43 +80,43 @@ const productsDB = [
         id: 1,
         title: "Engineering Physics",
         category: "books",
-        price: "Rs.300",
-        image: "fa-book-open"
+        price: "Rs.700",
+        image: "images/engineering.jpeg"
     },
     {
         id: 2,
-        title: "Casio Scientific Calc",
+        title: "Casio Calculator",
         category: "electronics",
-        price: "Rs.850",
-        image: "fa-calculator"
+        price: "Rs.250",
+        image: "images/calculator.jpeg"
     },
     {
         id: 3,
-        title: "Hero Cycle (Black)",
+        title: "Mountain Bike (Red)",
         category: "vehicles",
-        price: "Rs.3000",
-        image: "fa-bicycle"
+        price: "Rs.7600",
+        image: "images/mtb.jpeg"
     },
     {
         id: 4,
-        title: "White Lab Coat (M)",
+        title: "Lab Coat",
         category: "lab",
-        price: "Rs.400",
-        image: "fa-flask"
+        price: "Rs.300",
+        image: "images/coat.jpg"
     },
     {
         id: 5,
-        title: "Chemistry Notes (Sem 1)",
+        title: "Python Book",
         category: "books",
-        price: "Rs.150",
-        image: "fa-book-open"
+        price: "Rs.450",
+        image: "images/python.jpeg"
     },
     {
         id: 6,
-        title: "Laptop Stand",
+        title: "Lamp",
         category: "electronics",
-        price: "Rs.500",
-        image: "fa-laptop"
+        price: "Rs.380",
+        image: "images/lamp.jpg"
     }
 ];
 
@@ -143,7 +143,7 @@ function loadCategoryItems() {
             filteredProducts.forEach(product => {
                 const productHTML = `
                     <div class="product-card">
-                        <div class="product-img"><i class="fas ${product.image} fa-3x"></i></div>
+                        <div class="product-img"><img src="${product.image}" alt="${product.title}" style="width: 100%; height: 200px; object-fit: cover;"></div>
                         <div class="product-info">
                             <h4>${product.title}</h4>
                             <p class="price">${product.price}</p>
